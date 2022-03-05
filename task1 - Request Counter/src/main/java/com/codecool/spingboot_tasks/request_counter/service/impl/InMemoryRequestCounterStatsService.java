@@ -17,6 +17,7 @@ class InMemoryRequestCounterStatsService implements RequestCounterStatsService {
      */
     private final Map<HTTPMethod, Integer> stats = new HashMap<>();
 
+
     @Override
     public void increaseCounter(HTTPMethod method) throws Exception {
         stats.put(method, stats.getOrDefault(method, 0) + 1);
