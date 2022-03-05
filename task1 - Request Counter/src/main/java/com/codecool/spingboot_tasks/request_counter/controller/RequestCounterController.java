@@ -1,7 +1,6 @@
 package com.codecool.spingboot_tasks.request_counter.controller;
 
 
-import com.codecool.spingboot_tasks.request_counter.model.Statistics;
 import com.codecool.spingboot_tasks.request_counter.service.api.RequestCounterStatsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -9,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 @RestController
 class RequestCounterController {
