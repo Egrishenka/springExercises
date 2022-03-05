@@ -16,10 +16,10 @@ class RequestCounterController {
 
     private final List<String> shoppingCart;
 
-    private final RequestCounterStatsService<Statistics> requestCounter;
+    private final RequestCounterStatsService requestCounter;
 
     @Autowired
-    public RequestCounterController(RequestCounterStatsService<Statistics> requestCounter) throws InterruptedException {
+    public RequestCounterController(RequestCounterStatsService requestCounter) throws InterruptedException {
         this.shoppingCart = new ArrayList<>();
         this.requestCounter = requestCounter;
     }
