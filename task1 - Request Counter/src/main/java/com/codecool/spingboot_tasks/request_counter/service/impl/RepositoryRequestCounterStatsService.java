@@ -1,6 +1,6 @@
 package com.codecool.spingboot_tasks.request_counter.service.impl;
 
-import com.codecool.spingboot_tasks.request_counter.repository.RepositoryInterface;
+import com.codecool.spingboot_tasks.request_counter.repository.StatisticsRepository;
 import com.codecool.spingboot_tasks.request_counter.service.api.RequestCounterStatsService;
 import com.codecool.spingboot_tasks.request_counter.model.Statistics;
 import org.springframework.context.annotation.Primary;
@@ -11,9 +11,9 @@ import java.util.List;
 @Service
 @Primary
 public class RepositoryRequestCounterStatsService implements RequestCounterStatsService {
-    private final RepositoryInterface repository;
+    private final StatisticsRepository repository;
 
-    public RepositoryRequestCounterStatsService(RepositoryInterface repository) {
+    public RepositoryRequestCounterStatsService(StatisticsRepository repository) {
         this.repository = repository;
     }
 

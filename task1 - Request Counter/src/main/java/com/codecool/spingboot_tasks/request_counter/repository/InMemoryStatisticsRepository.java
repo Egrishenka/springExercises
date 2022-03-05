@@ -4,7 +4,7 @@ import com.codecool.spingboot_tasks.request_counter.model.Statistics;
 
 import java.util.List;
 
-class Repository implements RepositoryInterface{
+class InMemoryStatisticsRepository implements StatisticsRepository {
     @Override
     public int getCountByMethodName(String method) {
         return 0;

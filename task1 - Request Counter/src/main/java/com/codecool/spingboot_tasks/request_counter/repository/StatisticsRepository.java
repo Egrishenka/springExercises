@@ -4,7 +4,7 @@ import com.codecool.spingboot_tasks.request_counter.model.Statistics;
 
 import java.util.List;
 
-public interface RepositoryInterface {
+public interface StatisticsRepository {
     int getCountByMethodName(String method);
         
     void saveCountByMethodName(String method, int count);
