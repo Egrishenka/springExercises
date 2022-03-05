@@ -25,8 +25,11 @@ class InMemoryRequestCounterStatsService implements RequestCounterStatsService {
 
     @Override
     public List<Statistics> getStatistics() throws Exception{
+        Statistics newElement1 = new Statistics("GET", 3);
+        Statistics newElement2 = new Statistics("POST", 2);
+        Statistics newElement3 = new Statistics("PUT", 1);
 
-        throw new RuntimeException("Not implemented");
+        return List.of(newElement1, newElement2, newElement3);
     }
 }
 

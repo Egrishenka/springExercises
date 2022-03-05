@@ -19,11 +19,7 @@ class RequestStatsController {
 
     @GetMapping("/api/statistics")
     public List<Statistics> getAllStatistics() throws Exception {
-        Statistics newElement1 = new Statistics("GET", 3);
-        Statistics newElement2 = new Statistics("POST", 2);
-        Statistics newElement3 = new Statistics("PUT", 1);
-
-        return List.of(newElement1, newElement2, newElement3);
+        return requestCounter.getStatistics();
     }
 
 
