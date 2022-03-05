@@ -1,7 +1,7 @@
-package com.codecool.spingboot_tasks.request_counter.service.impl;
+package com.codecool.spingboot_tasks.request_counter.domain.impl;
 
-import com.codecool.spingboot_tasks.request_counter.model.Statistics;
-import com.codecool.spingboot_tasks.request_counter.service.api.RequestCounterStatsService;
+import com.codecool.spingboot_tasks.request_counter.domain.model.Statistics;
+import com.codecool.spingboot_tasks.request_counter.domain.api.RequestCounterStatsService;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
