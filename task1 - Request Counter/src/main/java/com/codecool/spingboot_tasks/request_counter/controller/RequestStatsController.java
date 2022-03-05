@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @RestController
@@ -18,7 +19,11 @@ class RequestStatsController {
 
     @GetMapping("/api/statistics")
     public List<Statistics> getAllStatistics() throws Exception {
-        return new ArrayList<>();
+        Statistics newElement1 = new Statistics("GET", 3);
+        Statistics newElement2 = new Statistics("POST", 2);
+        Statistics newElement3 = new Statistics("PUT", 1);
+
+        return List.of(newElement1, newElement2, newElement3);
     }
 
 
