@@ -1,5 +1,7 @@
 package com.codecool.spingboot_tasks.request_counter.controller;
 
+
+import com.codecool.spingboot_tasks.request_counter.service.RequestCounterStatsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,10 +15,10 @@ public class RequestCounterController {
 
     private final List<String> shoppingCart;
 
-    private final RequestCounter requestCounter;
+    private final RequestCounterStatsService requestCounter;
 
     @Autowired
-    public RequestCounterController(RequestCounter requestCounter) throws InterruptedException {
+    public RequestCounterController(RequestCounterStatsService requestCounter) throws InterruptedException {
         this.shoppingCart = new ArrayList<>();
         this.requestCounter = requestCounter;
     }
@@ -24,7 +26,7 @@ public class RequestCounterController {
     @GetMapping("/api/requests")
     public ResponseEntity<Map> get() throws Exception{
         System.out.println("GET method being called...");
-        requestCounter.increaseCounter(HTTPMethod.GET);
+        requestCounter.increaseCounter(RequestCounterStatsService.HTTPMethod.GET);
         return ResponseEntity.ok().build();
     }
 
@@ -42,7 +44,7 @@ public class RequestCounterController {
 
     @DeleteMapping("/api/requests")
     public ResponseEntity<Void> delete() throws Exception{
-        requestCounter.increaseCounter(HTTPMethod.DELETE);
+        requestCounter.increaseCounter(RequestCounterStatsService.HTTPMethod.DELETE);
         return ResponseEntity.ok().build();
     }
 

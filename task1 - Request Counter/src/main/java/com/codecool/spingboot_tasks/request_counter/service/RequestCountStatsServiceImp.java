@@ -1,7 +1,5 @@
 package com.codecool.spingboot_tasks.request_counter.service;
 
-import com.codecool.spingboot_tasks.request_counter.controller.HTTPMethod;
-import com.codecool.spingboot_tasks.request_counter.controller.RequestCounter;
 import com.codecool.spingboot_tasks.request_counter.model.Statistics;
 import org.springframework.stereotype.Service;
 
@@ -10,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service
-public class RequestCountStatsService implements RequestCounter {
+public class RequestCountStatsServiceImp implements RequestCounterStatsService {
 
 
     /*
@@ -30,3 +28,5 @@ public class RequestCountStatsService implements RequestCounter {
         throw new RuntimeException("Not implemented");
     }
 }
+
+
