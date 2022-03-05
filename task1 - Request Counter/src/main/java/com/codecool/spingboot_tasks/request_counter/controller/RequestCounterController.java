@@ -1,6 +1,5 @@
 package com.codecool.spingboot_tasks.request_counter.controller;
 
-import com.codecool.spingboot_tasks.request_counter.service.RequestCountStatsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -25,7 +24,7 @@ public class RequestCounterController {
     @GetMapping("/api/requests")
     public ResponseEntity<Map> get() throws Exception{
         System.out.println("GET method being called...");
-        requestCounter.increaseCounter(RequestCounter.GET);
+        requestCounter.increaseCounter(HTTPMethod.GET);
         return ResponseEntity.ok().build();
     }
 
@@ -43,7 +42,7 @@ public class RequestCounterController {
 
     @DeleteMapping("/api/requests")
     public ResponseEntity<Void> delete() throws Exception{
-        requestCounter.increaseCounter(RequestCounter.DELETE);
+        requestCounter.increaseCounter(HTTPMethod.DELETE);
         return ResponseEntity.ok().build();
     }
 
