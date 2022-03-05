@@ -1,6 +1,7 @@
-package com.codecool.spingboot_tasks.request_counter.service;
+package com.codecool.spingboot_tasks.request_counter.service.impl;
 
 import com.codecool.spingboot_tasks.request_counter.model.Statistics;
+import com.codecool.spingboot_tasks.request_counter.service.api.RequestCounterStatsService;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;

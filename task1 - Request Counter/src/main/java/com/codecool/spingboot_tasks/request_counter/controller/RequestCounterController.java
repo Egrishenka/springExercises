@@ -1,7 +1,7 @@
 package com.codecool.spingboot_tasks.request_counter.controller;
 
 
-import com.codecool.spingboot_tasks.request_counter.service.RequestCounterStatsService;
+import com.codecool.spingboot_tasks.request_counter.service.api.RequestCounterStatsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

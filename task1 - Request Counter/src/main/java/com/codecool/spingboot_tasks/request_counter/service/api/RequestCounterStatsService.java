@@ -1,7 +1,4 @@
-package com.codecool.spingboot_tasks.request_counter.service;
-
-
-
+package com.codecool.spingboot_tasks.request_counter.service.api;
 
 public interface RequestCounterStatsService {
 
