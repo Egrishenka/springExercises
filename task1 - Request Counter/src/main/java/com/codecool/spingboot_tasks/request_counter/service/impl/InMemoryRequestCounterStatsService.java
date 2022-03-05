@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service
-public class InMemoryRequestCounterStatsService implements RequestCounterStatsService {
+class InMemoryRequestCounterStatsService implements RequestCounterStatsService {
     /*
      * Map holding statistics of methods execution. key is method name: GET,PUT etc.
      * value is and integer number representing number of executions
@@ -23,7 +23,8 @@ public class InMemoryRequestCounterStatsService implements RequestCounterStatsSe
         //throw new RuntimeException("Not implemented");
     }
 
-    public List<Statistics> getStatistics() {
+    @Override
+    public List<Statistics> getStatistics() throws Exception{
         throw new RuntimeException("Not implemented");
     }
 }
