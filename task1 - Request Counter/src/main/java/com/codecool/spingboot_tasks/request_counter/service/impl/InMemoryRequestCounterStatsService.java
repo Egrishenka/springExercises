@@ -25,6 +25,7 @@ class InMemoryRequestCounterStatsService implements RequestCounterStatsService {
 
     @Override
     public List<Statistics> getStatistics() throws Exception{
+
         throw new RuntimeException("Not implemented");
     }
 }
