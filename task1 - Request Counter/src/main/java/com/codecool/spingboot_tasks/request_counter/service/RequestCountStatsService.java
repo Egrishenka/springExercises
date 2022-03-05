@@ -11,11 +11,7 @@ import java.util.Map;
 @Service
 public class RequestCountStatsService implements RequestCounter {
 
-    public static String GET = "GET";
-    public static String POST = "POST";
-    public static String PUT = "PUT";
-    public static String DELETE = "DELETE";
-    public static String PATCH = "PATCH";
+
     /*
      * Map holding statistics of methods execution. key is method name: GET,PUT etc.
      * value is and integer number representing number of executions
@@ -24,7 +20,8 @@ public class RequestCountStatsService implements RequestCounter {
 
     @Override
     public void increaseCounter(String method) throws Exception {
-
+        stats.put(method, stats.getOrDefault(method, 0) + 1);
+        System.out.println(stats);
         //throw new RuntimeException("Not implemented");
     }
 
