@@ -2,7 +2,7 @@ package com.codecool.spingboot_tasks.request_counter.service.impl;
 
 import com.codecool.spingboot_tasks.request_counter.repository.RepositoryInterface;
 import com.codecool.spingboot_tasks.request_counter.service.api.RequestCounterStatsService;
-import com.codecool.spingboot_tasks.request_counter.service.api.Statistics;
+import com.codecool.spingboot_tasks.request_counter.model.Statistics;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 

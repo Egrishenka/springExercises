@@ -1,6 +1,6 @@
 package com.codecool.spingboot_tasks.request_counter.repository;
 
-import com.codecool.spingboot_tasks.request_counter.service.api.Statistics;
+import com.codecool.spingboot_tasks.request_counter.model.Statistics;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.codecool.spingboot_tasks.request_counter.service.api;
+package com.codecool.spingboot_tasks.request_counter.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
