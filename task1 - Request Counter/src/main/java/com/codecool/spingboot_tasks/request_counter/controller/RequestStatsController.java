@@ -11,9 +11,9 @@ import java.util.List;
 
 @RestController
 class RequestStatsController {
-    private final RequestCounterStatsService requestCounter;
+    private final RequestCounterStatsService<Statistics> requestCounter;
 
-    public RequestStatsController(RequestCounterStatsService requestCounter){
+    public RequestStatsController(RequestCounterStatsService<Statistics> requestCounter){
         this.requestCounter = requestCounter;
     }
 

@@ -1,13 +1,11 @@
 package com.codecool.spingboot_tasks.request_counter.service.api;
 
-import com.codecool.spingboot_tasks.request_counter.model.Statistics;
-
 import java.util.List;
 
-public interface RequestCounterStatsService {
+public interface RequestCounterStatsService <T> {
 
     void increaseCounter(HTTPMethod method) throws Exception;
-    List<Statistics> getStatistics() throws Exception;
+    List<T> getStatistics() throws Exception;
 
     enum HTTPMethod {
         GET,
