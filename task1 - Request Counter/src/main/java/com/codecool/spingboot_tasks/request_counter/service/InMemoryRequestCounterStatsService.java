@@ -8,9 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service
-public class RequestCountStatsServiceImp implements RequestCounterStatsService {
-
-
+public class InMemoryRequestCounterStatsService implements RequestCounterStatsService {
     /*
      * Map holding statistics of methods execution. key is method name: GET,PUT etc.
      * value is and integer number representing number of executions
